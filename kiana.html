@@ -1,0 +1,235 @@
+<html>
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      font-size: 32px;
+      font-weight: bold;
+      color: #333333;
+    }
+
+    .nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-link {
+      font-size: 18px;
+      color: #333333;
+      text-decoration: none;
+    }
+
+    .nav-link:hover {
+      color: #0099ff;
+    }
+
+    .main {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .sidebar {
+      width: 300px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333333;
+      padding: 20px;
+      border-bottom: 1px solid #eeeeee;
+    }
+
+    .sidebar-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      border-bottom: 1px solid #eeeeee;
+    }
+
+    .sidebar-item-label {
+      font-size: 18px;
+      color: #333333;
+    }
+
+    .sidebar-item-value {
+      font-size: 18px;
+      font-weight: bold;
+      color: #0099ff;
+    }
+
+    .content {
+      flex: 1;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .content-title {
+      font-size: 32px;
+      font-weight: bold;
+      color: #333333;
+      padding: 20px;
+      border-bottom: 1px solid #eeeeee;
+    }
+
+    .content-body {
+      padding: 20px;
+    }
+
+    .content-body p {
+      font-size: 18px;
+      color: #333333;
+      line-height: 1.5;
+    }
+
+    .content-body h3 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333333;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .content-body ul {
+      list-style: none;
+      margin-left: 20px;
+    }
+
+    .content-body li {
+      font-size: 18px;
+      color: #333333;
+      margin-bottom: 10px;
+    }
+
+    .content-body li:before {
+      content: "\2022";
+      color: #0099ff;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    .content-body button {
+      display: block;
+      width: 200px;
+      height: 50px;
+      margin: 20px auto;
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffffff;
+      background-color: #0099ff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .content-body button:hover {
+      background-color: #00ccff;
+    }
+
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer-text {
+      font-size: 18px;
+      color: #333333;
+    }
+
+    .footer-text a {
+      color: #0099ff;
+      text-decoration: none;
+    }
+
+    .footer-text a:hover {
+      color: #00ccff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">KIANA</div>
+      <div class="nav">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#">Contact</a>
+      </div>
+    </div>
+    <div class="main">
+      <div class="sidebar">
+        <div class="sidebar-title">Trading Bot Status</div>
+        <div class="sidebar-item">
+          <div class="sidebar-item-label">Current Price</div>
+          <div class="sidebar-item-value">$10,000</div>
+        </div>
+        <div class="sidebar-item">
+          <div class="sidebar-item-label">Profit/Loss</div>
+          <div class="sidebar-item-value">$500</div>
+        </div>
+        <div class="sidebar-item">
+          <div class="sidebar-item-label">Balance</div>
+          <div class="sidebar-item-value">$15,000</div>
+        </div>
+        <div class="sidebar-item">
+          <div class="sidebar-item-label">Buy/Sell</div>
+          <div class="sidebar-item-value">Sell</div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-title">Welcome to KIANA</div>
+        <div class="content-body">
+          <p>KIANA is a smart and powerful trading bot that can help you make money in the cryptocurrency market. KIANA uses advanced algorithms and machine learning to analyze the market trends and execute the best trades for you.</p>
+          <p>With KIANA, you can:</p>
+          <ul>
+            <li>Trade multiple cryptocurrencies with ease</li>
+            <li>Set your own risk and reward preferences</li>
+            <li>Monitor your performance and track your progress</li>
+            <li>Enjoy a user-friendly and responsive interface</li>
+          </ul>
+          <h3>Ready to start trading?</h3>
+          <p>Just click the button below and follow the instructions to create your account and activate your bot. It's fast and easy!</p>
+          <button>Start Trading Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-text">© 2024 Arman.bvh. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></div>
+    </div>
+  </div>
+</body>
+</html>
